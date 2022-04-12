@@ -1,0 +1,27 @@
+
+######################################
+#       Rules of Symbolic Game
+######################################
+
+{}                # unamed
+A:{}              # node A
+{A}               # inhert A or element A inside
+
+{A:{},B:{},C:{}}  # array
+A:{B:{C:{}}}      # parent->child queue
+
+# Array and Queue
+
+[A,B,C] = {A:{},B:{},C:{}}
+<A,B,C> = {A:{B:{C:{}}}}
+
+# Calc Rules
+
+<A,B,C> + <D,E,F> = <A,B,C,D,E,F>
+[A,B,C] + [D,E,F] = [<A,D>,<B,E>,<C,F>]
+
+<A,B,C> + <C,D,E> = <A,B,C,D,E>
+
+A = <0,A>
+<A,B> = -<B,A>
+<0,A> = -<A,0>
