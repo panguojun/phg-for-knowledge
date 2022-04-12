@@ -3,4 +3,6 @@
 # 
 ###################################
 
-Pyrimidine：[<N,C,N,N,C,C>,<N,H>,<C,O>,<N,H*2>]
+Cytosine： [<N,C,N,N,C,C>,<N,H>,<C,O>,[<N,H>*2]]
+Thymine：  [<N,C,N,C,C,C>,<N,H>,<C,O>,<N,H>,<C,O>,[<C.H>*3]]
+Uracil：   [<N,C,N,N,C,C>,<N,H>,<C,O>,<N,H*2>]
