@@ -25,3 +25,6 @@ A:{B:{C:{}}}      # parent->child queue
 A = <0,A>
 <A,B> = -<B,A>
 <0,A> = -<A,0>
+
+# Selector/Looper
+?(phg)@n[node]
