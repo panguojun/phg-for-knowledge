@@ -20,5 +20,7 @@ animation();
 	segment:{md:segment.fbx}
 	antenna:<segment,(scl(segment)),(scl(segment))>
 	head:[fakeeye,mouth,{[antenna,antenna]}]
-	
+	leg:<segment,(scl(segment)),(scl(segment))>
+	chest:{segment,[leg,leg]}
+	...
 }
