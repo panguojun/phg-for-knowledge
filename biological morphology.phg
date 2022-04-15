@@ -19,6 +19,6 @@ animation();
 	mouth:{md:mouth.fbx}
 	segment:{md:segment.fbx}
 	antenna:<segment,(scl(segment)),(scl(segment))>
-	head:[fakeeye,mouth,[antenna,antenna]]
+	head:[fakeeye,mouth,{[antenna,antenna]}]
 	
 }
