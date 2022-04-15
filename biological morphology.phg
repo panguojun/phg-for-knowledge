@@ -1,0 +1,14 @@
+###################dragon#####################
+{
+	{vis:false
+		leg:{md:leg.rbx}
+		legr:(mry(leg))
+		body:<{bodyseg,md:body.rbx},[leg,legr]>		# structure
+		constrnd:<body;target:pre,constr:lookat> 	# constraint
+		bnode:<constrn,a:1,0,0;b:2,0,0;anim:move> 	# animation
+	}
+	<bnode,bnode,bnode,bnode,bnode,bnode>			# setup
+}
+setupnodes();
+constraint();
+animation();
