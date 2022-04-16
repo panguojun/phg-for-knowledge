@@ -24,3 +24,16 @@ animation();
 	chest:{segment,[leg,leg]}
 	...
 }
+
+{
+	fakeeye:{md:fakeeye.fbx}
+	mouth:{md:mouth.fbx}
+	seg:{md:segment.fbx}
+	antenna:{(@5{sequ(seg);})}
+	head:{[
+	antenna,{(right(antenna);)},
+	mouth,
+	(@5{array(fakeeye);})
+	]}
+	...
+}
