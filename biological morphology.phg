@@ -1,5 +1,4 @@
-###################dragon#####################
-{
+{###################dragon#####################
 	{vis:false
 		leg:{md:leg.fbx}
 		legr:(mry(leg))
@@ -13,8 +12,7 @@ setupnodes();
 constraint();
 animation();
 
-###################Protura#####################
-{
+{###################Protura#####################
 	fakeeye:{md:fakeeye.fbx}
 	mouth:{md:mouth.fbx}
 	segment:{md:segment.fbx}
@@ -25,7 +23,7 @@ animation();
 	...
 }
 
-{####### insect #######
+{################# insect #####################
 	# head
 	eye:{md:fakeeye.fbx}
 	mouth:{md:mouth.fbx}
@@ -36,9 +34,9 @@ animation();
 	mouth,
 	(pair(eye,eye);)
 	]}
+	
 	# chest
 	legse:{md:segment.fbx}
 	leg:{ (@5{sequ(legse);}) }
 	legpair:(pair(leg,leg);)
-	
 }
