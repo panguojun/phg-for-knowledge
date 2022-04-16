@@ -25,7 +25,7 @@ animation();
 	...
 }
 
-{####### insect {#######
+{####### insect #######
 	# head
 	eye:{md:fakeeye.fbx}
 	mouth:{md:mouth.fbx}
