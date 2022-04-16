@@ -37,4 +37,8 @@ animation();
 	(pair(eye,eye);)
 	]}
 	# chest
+	legse:{md:segment.fbx}
+	leg:{(@5{sequ(legse);})}
+	legpair:(pair(leg,leg);)
+	
 }
