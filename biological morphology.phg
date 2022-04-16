@@ -26,6 +26,7 @@ animation();
 }
 # insect
 {
+	# head
 	eye:{md:fakeeye.fbx}
 	mouth:{md:mouth.fbx}
 	seg:{md:segment.fbx}
@@ -35,5 +36,5 @@ animation();
 	mouth,
 	(pair(eye,eye);)
 	]}
-	...
+	# chest
 }
