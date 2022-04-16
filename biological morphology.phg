@@ -30,7 +30,7 @@ animation();
 	seg:{md:segment.fbx}
 	antenna:{(@5{sequ(seg);})}
 	head:{[
-	(pair(antenna,antenna);),
+	(pairx(antenna,antenna);),
 	mouth,
 	(pair(eye,eye);)
 	]}
@@ -38,5 +38,12 @@ animation();
 	# chest
 	legse:{md:segment.fbx}
 	leg:{ (@5{sequ(legse);}) }
-	legpair:(pair(leg,leg);)
+	legpair:(pairx(leg,leg);)
+	chestseg:{[
+		{md:chest.fbx}
+		legpair
+	]}
+	chest:{
+		(@3{sequ(chestseg);})
+	}
 }
