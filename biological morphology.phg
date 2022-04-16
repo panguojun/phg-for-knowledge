@@ -24,16 +24,16 @@ animation();
 	chest:{segment,[leg,leg]}
 	...
 }
-
+# insect
 {
-	fakeeye:{md:fakeeye.fbx}
+	eye:{md:fakeeye.fbx}
 	mouth:{md:mouth.fbx}
 	seg:{md:segment.fbx}
 	antenna:{(@5{sequ(seg);})}
 	head:{[
-	antenna,{(right(antenna);)},
+	(pair(antenna,antenna);),
 	mouth,
-	(@5{array(fakeeye);})
+	(pair(eye,eye);)
 	]}
 	...
 }
