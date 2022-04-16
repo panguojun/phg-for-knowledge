@@ -24,8 +24,8 @@ animation();
 	chest:{segment,[leg,leg]}
 	...
 }
-# insect
-{
+
+{####### insect {#######
 	# head
 	eye:{md:fakeeye.fbx}
 	mouth:{md:mouth.fbx}
