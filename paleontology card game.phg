@@ -1,1 +1,11 @@
-
+evt{地质事件}
+organism{
+  autotrophs{
+      algae{}
+    }
+   Heterotrophs{
+      herbivores{}
+      carnivore{}
+      Omnivores{}
+  }
+}
