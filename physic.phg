@@ -1,6 +1,15 @@
-{#Saturated vapor pressure
-	T:273.15 + 30
-	P:math.exp(77.3450 + 0.0057*T - 7235 / T)/pow(T, 8.2)
+{
+	steamcard{
+		C:-45
+		T:273.15 + C
+		P:math.exp(77.3450 + 0.0057*T - 7235 / T)/pow(T, 8.2)
+	}
+	gravcard{
+		m:1
+		M:1*earth_m
+		r:1*earth_r
+		g:G*M*m/(r*r)
+	}
 }
-curve_setup();
-calc(root,P);
+card();
+calc(steamcard,P);
