@@ -1,1 +1,27 @@
 
+{
+	steam{
+		C:-45
+		T:273.15 + C
+		P:math.exp(77.3450 + 0.0057*T - 7235 / T)/pow(T, 8.2)
+	}
+	grav{
+		m:60
+		M:1*earth_m
+		r:1*earth_r
+		g:G*M*m/(r*r)
+	}
+	time{
+		s:200
+		min:s/60
+	}
+	P_G{
+		T:100
+		r:10
+		equ:grav_h(r)=pvt_h2(T,r)
+		fit:fit(equ,r)
+	}
+}
+expr();
+card();
+fit(P_G,r);
